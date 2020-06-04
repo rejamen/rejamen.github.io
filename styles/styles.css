@@ -1,0 +1,132 @@
+
+@font-face {
+  font-family: 'digital-7regular';
+  src: url('../fonts/digital-7-webfont.woff2') format('woff2'),
+       url('../fonts/digital-7-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+body {
+  margin: 0px;
+  width: 100%;
+  font-family: 'digital-7regular';
+}
+header {
+  background-color: #cceabb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #5c2a9d;
+  height: 50px;
+  text-decoration: underline;
+}
+/*Este sería el header para la vista nocturna */
+.header_night {
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  height: 50px;
+  text-decoration: underline;
+}
+header h1 {
+  margin-top: 25px;
+}
+header img {
+  height: 35px;
+  width: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+.container {
+  background: linear-gradient(#cceabb, #ffffff);
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 30px;
+  min-height: calc(100vh - 200px);
+}
+.container__clock {
+  width: 300px;
+  height: 110px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid #00a1ab;
+  border-radius: 60px;
+  margin-top: 60px;
+  color: blue;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 5px 15px;
+}
+.container__clock--elements {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 90px;
+  color: #5c2a9d;
+}
+/*Este seria el container principal para la vista nocturna*/
+.container_night {
+  background: black;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 30px;
+  min-height: calc(100vh - 200px);
+}
+/*Este sería el contenedor del reloj para la vista nocturna*/
+.container__clock__night {
+  width: 300px;
+  height: 110px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid #ffffff;
+  border-radius: 60px;
+  margin-top: 60px;
+  color: blue;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 5px 15px;
+}
+/*Estos serian los elementos del reloj para la vista nocturna*/
+.container__clock__night--elements {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 90px;
+  color: #ffffff;
+  }
+.footer {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  color: #5c2a9d;
+  justify-content: center;
+  margin-top: 100px;
+  height: 5px;
+  width: 100%;
+  }
+.footer p {
+  margin-top: 40px;
+
+}
+/*Footer para vista nocturna*/
+.footer_night {
+  width: 100%;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  justify-content: center;
+  height: 150px;
+  width: 100%;
+}
