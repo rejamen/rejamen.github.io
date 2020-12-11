@@ -1,0 +1,94 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+   position: fixed;
+   overflow-y:scroll;
+   overflow-x:hidden;
+   text-align: center;
+}
+
+.players-container {
+    height: 60%;
+}
+
+.card {
+    display:inline-block;
+    margin-top: 40px;
+    margin-left: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-text {
+    text-align: center;
+    color: gray;
+}
+
+.player-counter {
+    font-size: 2em;
+    text-align: center;
+}
+
+.card-img-top {
+    padding-top: 10px;
+}
+
+.driver-name {
+    font-size: 0.9em;
+}
+
+.team-name {
+    font-size: 0.8em;
+}
+
+.col-3 {
+    max-width: 10%;
+}
+
+.driver-card {
+    height: 260px;
+}
+
+.drivers-places {
+    background-color: #dddddd;
+    height: 100px;
+}
+
+.podio-container {
+    display:inline-block;
+    position: fixed;
+    top: 400px;
+    right: 10px;
+}
+
+.podio-place {
+    border: 1px #000000;
+    border-style: solid;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.place-1 {
+    display: inline-block;
+    height: 80px;
+}
+
+.place-2 {
+    display: inline-block;
+    height: 55px;
+    
+}
+
+.place-3 {
+    display: inline-block;
+    height: 30px;
+    
+}
