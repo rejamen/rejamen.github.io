@@ -1,265 +1,106 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reinaldo J. Menéndez — Senior Python / Backend Engineer</title>
+  <meta name="description" content="Senior Python / backend engineer. Strongest expertise in Odoo, also active in FastAPI, CLI tooling, and developer experience.">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="icon" type="image/png" href="https://github.com/rejamen.png">
+</head>
+<body>
+  <main>
+    <header>
+      <img class="avatar" src="https://github.com/rejamen.png" alt="Reinaldo's GitHub avatar" width="96" height="96">
+      <h1>Reinaldo J. Menéndez</h1>
+      <p class="tagline">Senior Python / backend engineer · Odoo specialist</p>
+    </header>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <section>
+      <h2>About</h2>
+      <p>
+        I'm a senior Python / backend engineer. My deepest experience is with
+        <strong>Odoo</strong> — building modules, integrations, migrations, and deployments
+        for ERP-heavy environments — but most of my day-to-day work goes broader: Python
+        backends, CLI tooling, FastAPI services, and developer experience.
+      </p>
+      <p>
+        I also create technical content under <a href="https://www.youtube.com/@aidooit">@aidooit</a>
+        on YouTube, where I work through real problems in Odoo and Python out loud.
+      </p>
+    </section>
 
-    <!--Custom CSS -->
-    <link rel="stylesheet" href="./static/src/css/main.css"/>
+    <section>
+      <h2>What I work on</h2>
+      <ul>
+        <li>Python backends and APIs (FastAPI, SQLModel, Django)</li>
+        <li>Odoo modules, integrations, and OpenUpgrade-based migrations</li>
+        <li>CLI tooling that removes friction from daily developer workflows</li>
+        <li>Automation and quality tooling for ERP-adjacent codebases</li>
+      </ul>
+    </section>
 
-    <title>La porra!</title>
+    <section>
+      <h2>Featured projects</h2>
+      <ul class="projects">
+        <li>
+          <a href="https://github.com/rejamen/gith"><strong>gith</strong></a>
+          <span class="tag">Python</span>
+          <p>Typer-based Git CLI helper. Index-based branch ops, multi-repo checkout, configurable defaults. Shipping under my own name.</p>
+        </li>
+        <li>
+          <a href="https://github.com/aidooit/ou-runner"><strong>ou-runner</strong></a>
+          <span class="tag">Python</span>
+          <p>Walks an Odoo database through major-version migrations one hop at a time. Docker-based wrapper around OCA/OpenUpgrade — every dump named, every hop timed.</p>
+        </li>
+        <li>
+          <a href="https://github.com/aidooit/qualidoo-cli"><strong>qualidoo-cli</strong></a>
+          <span class="tag">Python</span>
+          <p>AI-powered quality analysis tool for Odoo addons. CLI that uploads addons to qualidoo.com and surfaces findings directly in your terminal — designed to slot into CI/CD.</p>
+        </li>
+        <li>
+          <a href="https://github.com/rejamen/odoo-ruff"><strong>odoo-ruff</strong></a>
+          <span class="tag">Tutorial</span>
+          <p>Practical guide and configuration for using Ruff as linter and formatter in Odoo projects.</p>
+        </li>
+        <li>
+          <a href="https://github.com/rejamen/odoo_field_trigger_tree"><strong>odoo_field_trigger_tree</strong></a>
+          <span class="tag">Python · D3.js</span>
+          <p>FastAPI + D3.js web app that visualizes Odoo field dependency trees as a hierarchical graph — for developers who need to understand what a computed field will recompute.</p>
+        </li>
+        <li>
+          <a href="https://github.com/rejamen/fastapi_sqlmodel_sync_async_example"><strong>fastapi_sqlmodel_sync_async_example</strong></a>
+          <span class="tag">Python</span>
+          <p>Reference project showing FastAPI + SQLModel with both sync and async patterns side-by-side, so you can pick the one that fits your case.</p>
+        </li>
+        <li>
+          <a href="https://github.com/rejamen/reflex_fastapi_template"><strong>reflex_fastapi_template</strong></a>
+          <span class="tag">Python</span>
+          <p>Starter template combining Reflex (frontend in Python) with a FastAPI backend.</p>
+        </li>
+        <li>
+          <a href="https://github.com/rejamen/fastapi_websocket_server"><strong>fastapi_websocket_server</strong></a>
+          <span class="tag">Python · Docker</span>
+          <p>Example FastAPI WebSocket server with MongoDB and Docker — a small, complete starting point for real-time services.</p>
+        </li>
+        <li>
+          <a href="https://github.com/rejamen/restore-terminals-vscode"><strong>restore-terminals-vscode</strong></a>
+          <span class="tag">TypeScript · fork I contribute to</span>
+          <p>VS Code extension that restores/starts terminals with a custom configuration. I contribute upstream — original work by <a href="https://github.com/EthanSK/restore-terminals-vscode">EthanSK</a>.</p>
+        </li>
+      </ul>
+    </section>
 
-  </head>
-  <body>
-    <div class="players-container">
-        <div class="container">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top rounded-circle" src="./static/src/img/pichi.png" alt="El pichi">
-                <div class="card-body">
-                  <h5 class="card-title">Reinaldo J.</h5>
-                  <p class="card-text">Go Go Ferrari Team!</p>
-                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                  <p class="player-counter">15</p>
-                </div>
-            </div>
-        
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top rounded-circle" src="./static/src/img/lester.png" alt="Beade">
-                <div class="card-body">
-                  <h5 class="card-title">Léster.</h5>
-                  <p class="card-text">My hero Verstapen!</p>
-                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                  <p class="player-counter">25</p>
-                </div>
-            </div>
-    
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top rounded-circle" src="./static/src/img/charly.png" alt="El charli">
-                <div class="card-body">
-                  <h5 class="card-title">Carlitos.</h5>
-                  <p class="card-text">Gasly hasta la muerte!</p>
-                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                  <p class="player-counter">50</p>
-                </div>
-            </div>
-    
-            <!-- <div class="drivers-list">
-    
-                
-    
-            </div> -->
-    
-        </div>
-    </div>
-
-    <div class="podio-container">
-        
-        <div class="podio-place place-3"></div>
-        <div class="podio-place place-1"></div>
-        <div class="podio-place place-2"></div>
-
-        
-    </div>
-
-
-    <div class="container-fluid">
-        <div class="row flex-nowrap">
-            <div class="col-3">
-                <div id="lewis" class="card driver-card draggable" style="width: 9rem;">
-                    <img class="card-img-top rounded-circle" src="./static/src/img/drivers/hamilton.png" alt="Hamilton">
-                    <div class="card-body">
-                      <h5 class="card-title driver-name">Lewis Hamilton</h5>
-                      <p class="card-text  team-name">Mercedes</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card driver-card draggable" style="width: 9rem;">
-                    <img class="card-img-top rounded-circle" src="./static/src/img/drivers/botas.png" alt="Hamilton">
-                    <div class="card-body">
-                      <h5 class="card-title driver-name">Valtteri Bottas</h5>
-                      <p class="card-text  team-name">Mercedes</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card driver-card draggable" style="width: 9rem;">
-                    <img class="card-img-top rounded-circle" src="./static/src/img/drivers/max.png" alt="Max Verstapen">
-                    <div class="card-body">
-                      <h5 class="card-title driver-name">Max Verstappen</h5>
-                      <p class="card-text  team-name">Red Bull</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card driver-card draggable" style="width: 9rem;">
-                    <img class="card-img-top rounded-circle" src="./static/src/img/drivers/albon.png" alt="Hamilton">
-                    <div class="card-body">
-                      <h5 class="card-title driver-name">Alex Albon</h5>
-                      <p class="card-text  team-name">Red Bull</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card driver-card draggable" style="width: 9rem;">
-                    <img class="card-img-top rounded-circle" src="./static/src/img/drivers/leclerc.png" alt="Hamilton">
-                    <div class="card-body">
-                      <h5 class="card-title driver-name">Charles Leclerc</h5>
-                      <p class="card-text  team-name">Ferrari</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card driver-card draggable" style="width: 9rem;">
-                    <img class="card-img-top rounded-circle" src="./static/src/img/drivers/vetel.png" alt="Hamilton">
-                    <div class="card-body">
-                      <h5 class="card-title driver-name">Sebastian Vetel</h5>
-                      <p class="card-text  team-name">Ferrari</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card driver-card draggable" style="width: 9rem;">
-                    <img class="card-img-top rounded-circle" src="./static/src/img/drivers/checo.png" alt="Hamilton">
-                    <div class="card-body">
-                      <h5 class="card-title driver-name">Checo Pérez</h5>
-                      <p class="card-text  team-name">Racing Point</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card  driver-card draggable" style="width: 9rem;">
-                    <img class="card-img-top rounded-circle" src="./static/src/img/drivers/stroll.png" alt="Hamilton">
-                    <div class="card-body">
-                      <h5 class="card-title driver-name">Lance Stroll</h5>
-                      <p class="card-text  team-name">Racing Point</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card driver-card draggable" style="width: 9rem;">
-                    <img class="card-img-top rounded-circle" src="./static/src/img/drivers/ricciardo.png" alt="Hamilton">
-                    <div class="card-body">
-                      <h5 class="card-title driver-name">Daniel Ricciardo</h5>
-                      <p class="card-text  team-name">Renault</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card driver-card draggable" style="width: 9rem;">
-                    <img class="card-img-top rounded-circle" src="./static/src/img/drivers/occon.png" alt="Hamilton">
-                    <div class="card-body">
-                      <h5 class="card-title driver-name">Esteban Ocon</h5>
-                      <p class="card-text  team-name">Renault</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card driver-card draggable" style="width: 9rem;">
-                    <img class="card-img-top rounded-circle" src="./static/src/img/drivers/sainz.png" alt="Hamilton">
-                    <div class="card-body">
-                      <h5 class="card-title driver-name">Carlos Sainz</h5>
-                      <p class="card-text  team-name">MacLaren</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card driver-card draggable" style="width: 9rem;">
-                    <img class="card-img-top rounded-circle" src="./static/src/img/drivers/norris.png" alt="Hamilton">
-                    <div class="card-body">
-                      <h5 class="card-title driver-name">Lando Norris</h5>
-                      <p class="card-text  team-name">MacLaren</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card driver-card draggable" style="width: 9rem;">
-                    <img class="card-img-top rounded-circle" src="./static/src/img/drivers/gasly.png" alt="Hamilton">
-                    <div class="card-body">
-                      <h5 class="card-title driver-name">Pierre Gasly</h5>
-                      <p class="card-text  team-name">Alpha Tauri</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card driver-card draggable" style="width: 9rem;">
-                    <img class="card-img-top rounded-circle" src="./static/src/img/drivers/kyviat.png" alt="Hamilton">
-                    <div class="card-body">
-                      <h5 class="card-title driver-name">Daniil Kvyat</h5>
-                      <p class="card-text team-name">Alpha Tauri</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card driver-card draggable" style="width: 9rem;">
-                    <img class="card-img-top rounded-circle" src="./static/src/img/drivers/kimi.png" alt="Hamilton">
-                    <div class="card-body">
-                      <h5 class="card-title driver-name">Kimi Räikkönen</h5>
-                      <p class="card-text  team-name">Alfa Romeo</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card driver-card draggable" style="width: 9rem;">
-                    <img class="card-img-top rounded-circle" src="./static/src/img/drivers/giovinazzi.png" alt="Hamilton">
-                    <div class="card-body">
-                      <h5 class="card-title driver-name">Antonio Giovinazzi</h5>
-                      <p class="card-text  team-name">Alfa Romeo</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card driver-card draggable" style="width: 9rem;">
-                    <img class="card-img-top rounded-circle" src="./static/src/img/drivers/rusell.png" alt="Hamilton">
-                    <div class="card-body">
-                      <h5 class="card-title driver-name">George Russell</h5>
-                      <p class="card-text  team-name">Williams</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card driver-card draggable" style="width: 9rem;">
-                    <img class="card-img-top rounded-circle" src="./static/src/img/drivers/latiffi.png" alt="Hamilton">
-                    <div class="card-body">
-                      <h5 class="card-title driver-name">Nicholas Latifi</h5>
-                      <p class="card-text  team-name">Williams</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card driver-card draggable" style="width: 9rem;">
-                    <img class="card-img-top rounded-circle" src="./static/src/img/drivers/magnusen.png" alt="Hamilton">
-                    <div class="card-body">
-                      <h5 class="card-title driver-name">Kevin Magnussen</h5>
-                      <p class="card-text  team-name">Haas</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card driver-card draggable" style="width: 9rem;">
-                    <img class="card-img-top rounded-circle" src="./static/src/img/drivers/grosean.png" alt="Hamilton">
-                    <div class="card-body">
-                      <h5 class="card-title driver-name">Romain Grosean</h5>
-                      <p class="card-text  team-name">Haas</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
-    <!-- Custom scripts-->
-    <script src="./static/src/js/main.js"></script>
-
-  </body>
+    <footer>
+      <h2>Get in touch</h2>
+      <ul class="contact">
+        <li><a href="https://github.com/rejamen">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/rejamen">LinkedIn</a></li>
+        <li><a href="https://www.youtube.com/@aidooit">YouTube · @aidooit</a></li>
+        <li><a href="mailto:rejamen@gmail.com">rejamen@gmail.com</a></li>
+        <li><a href="https://buymeacoffee.com/rejamen">Buy me a coffee ☕</a></li>
+      </ul>
+    </footer>
+  </main>
+</body>
 </html>
